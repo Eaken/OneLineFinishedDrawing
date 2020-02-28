@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="300dp"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/rows"
+            android:gravity="center"
+            android:text="行数"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/columns"
+            android:gravity="center"
+            android:text="列数"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/difficulties"
+            android:gravity="center"
+            android:text="障碍"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/passedSum"
+            android:gravity="center"
+            android:text="通过"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

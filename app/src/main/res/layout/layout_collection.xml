@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:background="@color/colorWhite"
+        android:padding="10dp"
+        android:gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/shape_gray_selected"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+        <TextView
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="行数"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="列数"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="障碍"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="通过"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ListView
+            android:scrollbars="none"
+            android:dividerHeight="2dp"
+            android:divider="@color/colorGray"
+            android:id="@+id/list_collection"
+            android:layout_width="300dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+    <TextView
+            android:text="清空"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_red"
+            android:id="@+id/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

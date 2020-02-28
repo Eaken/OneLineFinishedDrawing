@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/roadHint"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.onelinetoend.View.UtilView.Grid_Yibi
+        android:scrollbars="none"
+        android:id="@+id/grid_yibi"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:background="@drawable/ic_return"
+        android:id="@+id/returnButton"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:background="@drawable/ic_right"
+        android:id="@+id/nextButton"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/refreshButton"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:background="@drawable/ic_refresh"
+        android:id="@+id/refreshButton"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:background="@drawable/ic_help"
+        android:id="@+id/helpButton"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:background="@drawable/ic_home"
+        android:id="@+id/homeButton"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <com.example.onelinetoend.View.UtilView.MyNumPicker
+                android:id="@+id/rowPicker"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text="行"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <com.example.onelinetoend.View.UtilView.MyNumPicker
+                android:id="@+id/columnPicker"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text="列"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <com.example.onelinetoend.View.UtilView.MyNumPicker
+                android:id="@+id/forbiddenPicker"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text="障碍数"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <CheckBox
+            android:gravity="center"
+            android:id="@+id/passPassed"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:text="跳过已通过的"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginBottom="10dp"
+            android:id="@+id/qd"
+            android:text="确定"
+            android:background="@drawable/shape_ellipse_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

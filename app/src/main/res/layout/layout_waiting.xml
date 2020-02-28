@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+    
+    <ProgressBar
+            android:layout_margin="20dp"
+            android:id="@+id/progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    <TextView
+            android:id="@+id/hint"
+            android:gravity="center"
+            android:text="正在构图。。。\n后台会一直不断生成随机路径图并存库，也许你开一晚上游戏明天就能流畅玩了哈"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/qx"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/shape_red"
+            android:text="取消"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

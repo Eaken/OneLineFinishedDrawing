@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.onelinetoend.View.UtilView.Grid_Yibi
+        android:scrollbars="none"
+        android:id="@+id/grid_yibi"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/passedHint"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/grid_yibi"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:text="你已经通过本图"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/createdHint"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/topcenter"
+        android:layout_above="@+id/grid_yibi"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:text="※生成成功,如果和之前的一样,则证明其它图片还未生成,请稍后\n(长按取消提示)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:background="@drawable/ic_return"
+        android:id="@+id/returnButton"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/topcenter"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/setting"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:text="点击设置\n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:text="已获取≥0个地图"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:background="@drawable/ic_right"
+        android:id="@+id/nextButton"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/refreshButton"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:background="@drawable/ic_refresh"
+        android:id="@+id/refreshButton"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:background="@drawable/ic_help"
+        android:id="@+id/helpButton"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <CheckBox
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/passPassed"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:text="跳过已通过的"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:background="@drawable/ic_collection"
+        android:id="@+id/collectionButton"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+</RelativeLayout>
