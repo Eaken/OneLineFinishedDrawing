@@ -15,7 +15,6 @@ public class PermissionUtil {
     public static boolean checkSavePermission(Activity activity, int requestCode){
         if(ContextCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(activity,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},requestCode);
-            activity.runOnUiThread(()-> Toast.makeText(activity,"请先授予存储权限", Toast.LENGTH_SHORT).show());
             return false;
         }else {
             return true;
@@ -34,7 +33,6 @@ public class PermissionUtil {
     public static boolean checkCameraPermission(Activity activity, int requestCode){
         if(ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(activity,new String[]{Manifest.permission.CAMERA},requestCode);
-            activity.runOnUiThread(()-> Toast.makeText(activity,"请先授予相机权限", Toast.LENGTH_SHORT).show());
             return false;
         }else {
             return true;
