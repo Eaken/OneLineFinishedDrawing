@@ -5,4 +5,4 @@ Android版一笔画完小游戏
 
 有事联系微信：1063874640，qq同号，备注写Android
 
-![image](https://github.com/Eaken/OneLineFinishedDrawing/blob/master/demo.gif) 
+![image](https://github.com/Eaken/OneLineFinishedDrawing/blob/master/demo1.gif) 
